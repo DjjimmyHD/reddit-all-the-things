@@ -1,0 +1,24 @@
+{
+  "name": "reddit-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Reddit.js",
+  "scripts": {
+    "start":  "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninjames101/reddit-all-the-things.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninjames101/reddit-all-the-things/issues"
+  },
+  "homepage": "https://github.com/ninjames101/reddit-all-the-things#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "knex": "^0.13.0"
+  }
+}
