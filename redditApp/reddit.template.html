@@ -130,16 +130,19 @@
             |
             <a><i class="glyphicon glyphicon-arrow-up"></i></a>
             <a><i class="glyphicon glyphicon-arrow-down"></i></a>
-            10
+            {{post.votes}}
           </h4>
           <div class="text-right">
             {{post.author}}
+          </div>
+          <div class="text-right">
+            {{post.id}}
           </div>
           <p>
           {{post.body}}
           </p>
           <div>
-            Some time ago
+            {{post.date}}
             |
             <i class="glyphicon glyphicon-comment"></i>
             <a>
