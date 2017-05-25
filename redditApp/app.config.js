@@ -17,5 +17,11 @@ function config($stateProvider, $urlRouterProvider, $locationProvider){
      url: '/newpost',
      component: 'post'
    })
+   .state({
+     name: 'edit',
+     url: '/:id/edit',
+     component: 'edit',
+     params: {post:{}}
+   })
    // etc...
 }

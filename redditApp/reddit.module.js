@@ -7,3 +7,7 @@ angular.module('app', ['ui.router'])
     controller: 'NewPost',
     templateUrl:'/newpost.template.html'
   })
+  .component('edit', {
+    controller: 'EditPost',
+    templateUrl: '/editpost.template.html'
+  })

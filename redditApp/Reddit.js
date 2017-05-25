@@ -5,7 +5,7 @@ function Reddit($http) {
   vm = this
 vm.$onInit = function() {
   console.log('init');
-  $http.get('http://localhost:7007/api/posts')
+  $http.get('http://localhost:8080/api/posts')
   .then(function(response){
     console.log(response);
     vm.posts = response.data
@@ -18,7 +18,7 @@ vm.$onInit = function() {
   }
     vm.deletePost = function(e, post) {
      let meow =  vm.posts[vm.posts.indexOf(post)].id
-      $http.delete('http://localhost:7007/api/posts/'+ meow)
+      $http.delete('http://localhost:8080/api/posts/'+ meow)
       e.preventDefault()
 
       vm.posts.splice(vm.posts.indexOf(post), 1)
